@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gallery</title>
+  
+  </head>
+
+  <style>
+    *{
+     
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 15px;
+    
+}
+@media (max-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+}
+   
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.img2 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.img3 {
+    grid-column-start:6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.img4{
+  grid-column-start:7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.img5{
+  grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+.img6 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.img7 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+} 
+.img8 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+ .img9 {
+    grid-column-start:8;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+.img10{
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 8;
+} 
+.img11{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+.img12{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+.img13{
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+.img14{
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+
+  </style>
+  <body>
+    <div class="gallery">
+      <img class="img1" src="./images/gal-1.jpeg" alt="1">
+      <img class="img2" src="./images/gal-2.jpeg" alt="2">
+      <img class="img3" src="./images/gal-3.jpeg" alt="3">
+      <img class="img4" src="./images/gal-4.jpeg" alt="4">
+      <img class="img5" src="./images/gal-5.jpeg" alt="5">
+      <img class="img6" src="./images/gal-6.jpeg" alt="6">
+      <img class="img7" src="./images/gal-7.jpeg" alt="7">
+      <img class="img8" src="./images/gal-8.jpeg" alt="8">
+      <img class="img9" src="./images/gal-9.jpeg" alt="9">
+      <img class="img10" src="./images/gal-10.jpeg" alt="10">
+      <img class="img11" src="./images/gal-11.jpeg" alt="11">
+      <img class="img12" src="./images/gal-12.jpeg" alt="12">
+      <img class="img13" src="./images/gal-13.jpeg" alt="13">
+      <img class="img14" src="./images/gal-14.jpeg" alt="14">  
+  </div>
+  </body>
+</html>
